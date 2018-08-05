@@ -1,0 +1,11 @@
+{
+    "name": "nw-haxeui",
+    "version": "1.0.0",
+    "description": "",
+    "main": "content/index.html",
+    "window": {
+      "min_width": 800,
+      "min_height": 600,
+      "icon": "icon.png"
+    }
+}

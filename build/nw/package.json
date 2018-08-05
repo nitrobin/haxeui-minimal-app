@@ -1,0 +1,13 @@
+{
+  "name": "nodewebkit-haxeui",
+  "version": "1.0.0",
+  "description": "Simple nw.js and haxeui project",
+  "scripts": {
+    "dev": "nw app/",
+    "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ app/"
+  },
+  "devDependencies": {
+    "nw": "^0.32.0",
+    "nw-builder": "^3.5.4"
+  }
+}

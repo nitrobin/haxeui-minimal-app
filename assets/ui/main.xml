@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vbox id="main" width="100%" height="100%" style="padding:15px;spacing:15px;">
+    <style source="main.css" />
+    <script source="main.hscript" />
+
+    <label text="Button Example" style="font-size: 32px;font-underline:true;font-bold:true" />
+
+    <hbox width="100%">
+        <hbox width="100%" continuous="true">
+            <vbox width="50%">
+                <button id="normal" text="Default" styleName="big" userData="0" icon="haxeui-core/styles/default/haxeui.png" onclick="onNormalClicked()" />
+                <label id="normalClickCount" text="Click count: 0" style="horizontal-align:center;" />
+            </vbox>
+            <vbox width="50%">
+                <button id="styled" text="Styled" styleName="big" userData="0" icon="haxeui-core/styles/default/haxeui.png" onclick="onStyledClicked()" />
+                <label id="styledClickCount" text="Click count: 0" style="horizontal-align:center;" />
+            </vbox>
+            <vbox width="50%" unless="hxwidgets">
+                <button id="bitmap" text="Bitmap" styleName="big" userData="0" icon="haxeui-core/styles/default/haxeui.png" onclick="onBitmapClicked()" />
+                <label id="bitmapClickCount" text="Click count: 0" style="horizontal-align:center;" />
+            </vbox>
+            <vbox width="50%" if="html5, hxwidgets">
+                <button id="native" text="Native" styleName="big" userData="0" native="true" icon="haxeui-core/styles/default/haxeui.png" onclick="onNativeClicked()" />
+                <label id="nativeClickCount" text="Click count: 0" style="horizontal-align:center;" />
+            </vbox>
+        </hbox>
+
+        <vbox style="padding-left: 15px;spacing:10px;">
+            <hbox>
+                <label width="100" text="Icon Position" />
+                <dropdown id="iconPosition" text="left" width="110" onchange="setIconPosition()">
+                    <data>
+                        <item value="left" />
+                        <item value="right" />
+                        <item value="top" />
+                        <item value="bottom" />
+                    </data>
+                </dropdown>
+            </hbox>
+            <hbox>
+                <label width="100" text="Text Align" />
+                <dropdown id="textAlign" text="center" width="110" onchange="setTextAlign()">
+                    <data>
+                        <item value="left" />
+                        <item value="center" />
+                        <item value="right" />
+                    </data>
+                </dropdown>
+            </hbox>
+            <hbox>
+                <label width="100" text="Toggle" style="vertical-align:center;" />
+                <checkbox id="toggle" onchange="setToggle()" style="vertical-align:center;" />
+            </hbox>
+            <hbox>
+                <label width="100" text="Icon" style="vertical-align:center;" />
+                <dropdown id="icon" text="HaxeUI" width="110" onchange="setIcon()">
+                    <data>
+                        <item value="HaxeUI" path="haxeui-core/styles/default/haxeui.png" />
+                        <item value="Cross" path="haxeui-core/styles/default/dialogs/cross-circle.png" />
+                        <item value="Exclamation" path="haxeui-core/styles/default/dialogs/exclamation.png" />
+                        <item value="Information" path="haxeui-core/styles/default/dialogs/information.png" />
+                        <item value="Question" path="haxeui-core/styles/default/dialogs/question.png" />
+                    </data>
+                </dropdown>
+            </hbox>
+            <hbox>
+                <label width="100" text="Repeater" style="vertical-align:center;" />
+                <checkbox id="repeater" onchange="setRepeater()" style="vertical-align:center;" />
+            </hbox>
+            <hbox>
+                <label width="100" text="Remain Pressed" style="vertical-align:center;" />
+                <checkbox id="remainPressed" onchange="setRemainPressed()" style="vertical-align:center;" />
+            </hbox>
+        </vbox>
+    </hbox>
+    <input_widget/>
+    <input_widget_fromcode/>
+</vbox>

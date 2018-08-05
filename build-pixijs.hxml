@@ -1,0 +1,10 @@
+-cp src
+-main Main
+
+-lib pixijs:4.7.1
+-lib haxeui-core
+-lib haxeui-pixijs
+-lib hscript
+-lib actuate
+
+-js build/pixijs/main.js

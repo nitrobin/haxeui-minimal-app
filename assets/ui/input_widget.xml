@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hbox>
+    <textfield id="tf" text="0" />
+    <textfield id="tf2" text="0" />
+    <button id="bt1" text="-" repeater="true" />
+    <button id="bt2" text="+" repeater="true" />
+</hbox>

@@ -1,0 +1,10 @@
+-cp src
+-main Main
+
+-lib haxeui-core
+-lib haxeui-html5
+-lib hscript
+
+-dce full
+
+-js build/html5/main.js

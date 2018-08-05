@@ -1,0 +1,61 @@
+function onNormalClicked() {
+    normal.userData++;
+    normalClickCount.text = "Click count: " + normal.userData;
+}
+
+function onStyledClicked() {
+    styled.userData++;
+    styledClickCount.text = "Click count: " + styled.userData;
+}
+
+function onBitmapClicked() {
+    bitmap.userData++;
+    bitmapClickCount.text = "Click count: " + bitmap.userData;
+}
+
+function onNativeClicked() {
+    native.userData++;
+    nativeClickCount.text = "Click count: " + native.userData;
+}
+
+function setIconPosition() {
+    if (isVar("normal")) normal.iconPosition = iconPosition.selectedItem.value;
+    if (isVar("styled")) styled.iconPosition = iconPosition.selectedItem.value;
+    if (isVar("bitmap")) bitmap.iconPosition = iconPosition.selectedItem.value;
+    if (isVar("native")) native.iconPosition = iconPosition.selectedItem.value;
+}
+
+function setTextAlign() {
+    if (isVar("normal")) normal.textAlign = textAlign.selectedItem.value;
+    if (isVar("styled")) styled.textAlign = textAlign.selectedItem.value;
+    if (isVar("bitmap")) bitmap.textAlign = textAlign.selectedItem.value;
+    if (isVar("native")) native.textAlign = textAlign.selectedItem.value;
+}
+
+function setToggle() {
+    if (isVar("normal")) normal.toggle = toggle.selected;
+    if (isVar("styled")) styled.toggle = toggle.selected;
+    if (isVar("bitmap")) bitmap.toggle = toggle.selected;
+    if (isVar("native")) native.toggle = toggle.selected;
+}
+
+function setIcon() {
+    if (isVar("normal")) normal.icon = icon.selectedItem.path;
+    if (isVar("styled")) styled.icon = icon.selectedItem.path;
+    if (isVar("bitmap")) bitmap.icon = icon.selectedItem.path;
+    if (isVar("native")) native.icon = icon.selectedItem.path;
+}
+
+function setRepeater() {
+    if (isVar("normal")) normal.repeater = repeater.selected;
+    if (isVar("styled")) styled.repeater = repeater.selected;
+    if (isVar("bitmap")) bitmap.repeater = repeater.selected;
+    if (isVar("native")) native.repeater = repeater.selected;
+}
+
+function setRemainPressed() {
+    if (isVar("normal")) normal.remainPressed = remainPressed.selected;
+    if (isVar("styled")) styled.remainPressed = remainPressed.selected;
+    if (isVar("bitmap")) bitmap.remainPressed = remainPressed.selected;
+    if (isVar("native")) native.remainPressed = remainPressed.selected;
+}

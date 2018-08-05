@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <resources>
+        <resource path="../assets/images" prefix="images" />
+    </resources>
+
+    <components>
+        <!-- Register components -->
+        <class name="demo.InputWidget" alias="input_widget"/>               
+    </components>
+
+</module>

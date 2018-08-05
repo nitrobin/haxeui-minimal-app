@@ -1,0 +1,4 @@
+build/openfl
+build/nw/node_modules
+build/nw/dist
+**/.DS_Store
